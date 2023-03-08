@@ -1,0 +1,2 @@
+# .Net
+Platforma .Net

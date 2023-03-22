@@ -11,12 +11,13 @@ namespace WindowsFormsApp1
         public int speed;
         public int height;
         public static int id = 0;
-
+        public int objectId;
         public Plane()
         {
             speed = 10;
             height = 100;
             id++;
+            objectId = id;
         }
         public void Accelerate(int x)
         {
@@ -36,7 +37,7 @@ namespace WindowsFormsApp1
         }
         public override string ToString()
         {
-            return "Plane #" + id;
+            return "Plane #" + objectId;
         }
     }
 }

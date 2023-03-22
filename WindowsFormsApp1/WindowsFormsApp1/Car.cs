@@ -10,11 +10,13 @@ namespace WindowsFormsApp1
     {
         public int speed;
         public static int id = 0;
+        public int objectId;
 
         public Car()
         {
             speed = 10;
             id++;
+            objectId = id;
         }
         public void Accelerate(int x)
         {
@@ -26,7 +28,7 @@ namespace WindowsFormsApp1
         }
         public override string ToString()
         {
-            return "Car #" + id;
+            return "Car #" + objectId;
         }
     }
 }

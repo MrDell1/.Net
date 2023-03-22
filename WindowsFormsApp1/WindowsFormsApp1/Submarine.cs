@@ -11,12 +11,13 @@ namespace WindowsFormsApp1
         public int speed;
         public int deep;
         public static int id = 0;
-
+        public int objectId;
         public Submarine()
         {
             speed = 10;
             deep = 100;
             id++;
+            objectId = id;
         }
         public void Accelerate(int x)
         {
@@ -36,7 +37,7 @@ namespace WindowsFormsApp1
         }
         public override string ToString()
         {
-            return "Submarine #" + id;
+            return "Submarine #" + objectId;
         }
 
     }
